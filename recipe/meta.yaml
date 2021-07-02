@@ -1,4 +1,4 @@
-{% set version = "0.0.1" %}
+{% set version = "0.0.2" %}
 
 package:
   name: bmorph
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/UW-Hydro/bmorph/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 57ffdec209f51f4499e20611ee9597c870abb16985f60b929d100302b2203109
+  sha256: 744d7530dbbec2103ac6d95f602b2cd9c0e49ea35ddccd26095e74d3b6b2b9c5
 
 build:
   noarch: python
