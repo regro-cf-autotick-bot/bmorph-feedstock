@@ -1,4 +1,4 @@
-{% set version = "0.0.3" %}
+{% set version = "1.0.0" %}
 
 package:
   name: bmorph
@@ -6,12 +6,12 @@ package:
 
 source:
   url: https://github.com/UW-Hydro/bmorph/archive/refs/tags/{{ version }}.tar.gz
-  sha256: c6cccfb76ecea8fbb07f2461332408532f7b417bee93b47441b7efacc598f441
+  sha256: f58b3b6e4ec2ffee40877c53f14d74bb34eed047bd0254de12526381a25b774c
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -48,10 +48,10 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'bmorph is a package for streamflow bias correction'
+  summary: bmorph is a package for streamflow bias correction
 
   description: |
-      bmorph is a package for streamflow bias correction
+    bmorph is a package for streamflow bias correction
   doc_url: http://bmorph.readthedocs.io/
   dev_url: https://github.com/UW-Hydro/bmorph
 
